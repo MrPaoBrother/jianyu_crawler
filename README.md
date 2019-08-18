@@ -1,8 +1,7 @@
-# 网络爬虫-剑鱼标讯
+# 投标数据抓取
 
 ## 前言
-* [剑鱼标讯](https://www.jianyu360.com/)，国内专业的招投标信息服务平台
-剑鱼标讯基于云计算、大数据分析技术，通过移动端和PC端向用户提供招标搜索、招标订阅、拟建项目获取、项目关注等服务，帮助投标企业的管理、市场销售等人员随时随地掌握全国招标信息。
+* 一个投标信息服务平台
 
 ## 环境准备
 * win10
@@ -66,7 +65,7 @@ $ python handler.py
 ```
 
 ### web+chrome_headless
-* mac使用参考[这里](https://blog.csdn.net/g8433373/article/details/79833471)\
+* mac使用参考[这里](https://blog.csdn.net/g8433373/article/details/79833471)
 * 先将chrome浏览器关闭
 * win环境下 先使用cmd命令打开chrome
 
@@ -116,8 +115,13 @@ CREATE TABLE `jianyu` (
 * mysql存储注意对content字段进行long_text的存储, 不然too long 错误...
 
 ## 参考资料
+
 [1] [Fiddler 抓包](https://www.cnblogs.com/yyhh/p/5140852.html)
+
 [2] [python连接mysql](https://foofish.net/python-mysql.html)
+
 [3] [ChromeHeadless使用](https://blog.csdn.net/g8433373/article/details/79833471)
+
 [4] [Chrome开发者协议](https://chromedevtools.github.io/devtools-protocol/)
+
 [5] [PostMan官方文档](https://learning.getpostman.com/docs/postman/launching_postman/installation_and_updates/)
