@@ -21,3 +21,4 @@ class JianYu(models.Model):
     create_time = models.DateTimeField(auto_now_add=True)
     modify_time = models.DateTimeField(auto_now=True)
     extra = models.CharField(max_length=300, default='')
+    article_type = models.IntegerField(default=0)
